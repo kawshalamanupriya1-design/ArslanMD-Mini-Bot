@@ -1,13 +1,4 @@
-// ═══════════════════════════════════════════════════════════════════════════
-//  █████╗ ██████╗ ███████╗██╗      █████╗  ███╗   ██╗    ███╗   ███╗██████╗ 
-// ██╔══██╗██╔══██╗██╔════╝██║     ██╔══██╗████╗  ██║    ████╗ ████║██╔══██╗
-// ███████║██████╔╝███████╗██║     ███████║██╔██╗ ██║    ██╔████╔██║██║  ██║
-// ██╔══██║██╔══██╗╚════██║██║     ██╔══██║██║╚██╗██║    ██║╚██╔╝██║██║  ██║
-// ██║  ██║██║  ██║███████║███████╗██║  ██║██║  ████║     ██║ ╚═╝ ██║██████╔╝
-// ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝   ╚═══╝    ╚═╝     ╚═╝╚═════╝ 
-// ═══════════════════════════════════════════════════════════════════════════
-//                    ARSLAN MD - BOT CONFIGURATION
-// ═══════════════════════════════════════════════════════════════════════════
+
 
 const fs = require('fs');
 const dotenv = require('dotenv');
@@ -56,23 +47,23 @@ module.exports = {
     /** 
      * @description Owner's WhatsApp number with country code
      * @type {string}
-     * @default "+923237045919"
+     * @default "+94761495926"
      */
-    OWNER_NUMBER: process.env.OWNER_NUMBER || '+923237045919',
+    OWNER_NUMBER: process.env.OWNER_NUMBER || '+94761495926',
     
     /** 
      * @description Display name of the bot
      * @type {string}
-     * @default "Arslan MD Mini"
+     * @default "KATANA MD Mini"
      */
-    BOT_NAME: "Arslan MD Mini",
+    BOT_NAME: "KATANA MD Mini",
     
     /** 
      * @description Footer text for bot messages
      * @type {string}
-     * @default "© ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴀʀꜱʟᴀɴ-ᴍᴅ"
+     * @default "© ᴘᴏᴡᴇʀᴇᴅ ʙʏ KATANA-ᴍᴅ"
      */
-    BOT_FOOTER: '© ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴀʀꜱʟᴀɴ-ᴍᴅ',
+    BOT_FOOTER: '© KATANA ʙʏ ᴀʀꜱʟᴀɴ-ᴍᴅ',
     
     /** 
      * @description Bot work mode
@@ -227,7 +218,7 @@ module.exports = {
      * @description Default bot profile image path/URL
      * @type {string}
      */
-    IMAGE_PATH: 'https://files.catbox.moe/prkkzj.png',
+    IMAGE_PATH: 'https://github.com/kawwagaming02/kawshala-md/blob/main/images/KAWSHALA-MD%20(1).jpg?raw=true',
     
     /** 
      * @description WhatsApp channel link for updates
@@ -284,7 +275,7 @@ module.exports = {
 
 /**
  * @module config
- * @description Arslan MD Bot Configuration Module
+ * @description KATANA MD Bot Configuration Module
  * @version 2.0.0
  * @author Arslan MD
  * @license MIT
