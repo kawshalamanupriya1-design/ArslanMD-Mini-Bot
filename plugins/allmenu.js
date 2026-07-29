@@ -32,7 +32,7 @@ cmd({
         const date = moment().tz("Africa/Kampala").format("dddd, MMMM Do YYYY");
 
         const caption = `
-╭━━━《 *ᴀʀꜱʟᴀɴ-ᴍᴅ* 》━━━┈⊷
+╭━━━《 *katana-ᴍᴅ* 》━━━┈⊷
 ┃ ✦╭─────────────┈⊷
 ┃ ✦│▸ Total Commands : *${totalCommands}*
 ┃ ✦│▸ Time           : ${time}
@@ -44,7 +44,7 @@ ${menuText}
 `.trim();
 
         await conn.sendMessage(m.chat, {
-            image: { url: "https://files.catbox.moe/prkkzj.png" },
+            image: { url: "https://github.com/kawwagaming02/kawshala-md/blob/main/images/KAWSHALA-MD%20(1).jpg?raw=true" },
             caption,
             contextInfo: {
                 forwardingScore: 999,
