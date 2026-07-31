@@ -26,7 +26,7 @@ async (conn, mek, m, { from, sender, reply }) => {
         *I AM ALIVE NOW 🤗♥️*
 *┏────〘 INFO 〙───⊷*
 *┃👑 MODE :❯ ${config.MODE || 'private'}*
-*┃👑 USER :❯ ${config.OWNER_NAME || 'ARSLAN-MD'}*
+*┃👑 USER :❯ ${config.OWNER_NAME || 'katana-MD'}*
 *┃👑 PREFIX :❯ ❮ ${config.PREFIX || '.'} ❯*
 *┃👑 VERSION :❯ 1.0.0*
 *┃👑 TOTAL CMNDS :❯ ❮ ${totalCmds} ❯*
