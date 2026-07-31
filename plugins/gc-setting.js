@@ -390,8 +390,8 @@ reply("❌ Failed to promote user: " + err.message);
 
 // ==================== SIMPLE & WORKING DEMOTE COMMAND ====================
 cmd({
-pattern: "demote",
-alias: ["d", "dismiss", "removeadmin"],
+pattern: "DISMISS",
+alias: ["d", "dismis", "removeadmin"],
 desc: "Demote a group admin",
 category: "group",
 react: "⬇️",
@@ -482,10 +482,10 @@ try {
 // Try to promote bot  
 try {  
   await conn.groupParticipantsUpdate(from, [conn.user.id], "promote");  
-  reply("✅ *Bot ko admin banaya gaya!*\n\nAb aap use kar sakte hain:\n• .promote @user\n• .demote @admin\n• .kick @user");  
+  reply("✅ *Bot ko admiN*\n\nUSE BOT MAKE BOT:\n• .promote @user\n• .demote @admin\n• .kick @user");  
 } catch (err) {  
   if (err.message.includes("not authorized")) {  
-    reply(`❌ Bot ko admin nahi bana paaye.\n\n✳️ *Karan:* Aapke paas permission nahi hai bot ko admin banane ka.\n\n✳️ *Manual tarika:*\n1. Group settings mein jao\n2. "Group permissions" par click karo\n3. "Add members" mein jao\n4. Bot ko dhundo aur manually admin banao`);  
+    reply(`❌ Bot ko admin nOT FOUND.\n\n✳️ *Karan:* YOU NOT permission .\n\n✳️ *Manual :*\n1. Group settings mAIN\n2. "Group permissions" click\n3. "Add members" mein jao\n4. Bot manually admin`);  
   } else {  
     reply("❌ Failed to make bot admin: " + err.message);  
   }  
@@ -537,7 +537,7 @@ if (users.length === 0 && text) {
       // Pakistan numbers ke liye +92 ya 92 add karo  
       let cleanNum = num.replace(/\D/g, '');  
       if (cleanNum.startsWith('3')) {  
-        cleanNum = '92' + cleanNum; // 3000000000 -> 923000000000  
+        cleanNum = '94' + cleanNum; // 3000000000 -> 923000000000  
       }  
       if (cleanNum.length >= 10) {  
         return cleanNum + '@s.whatsapp.net';  
