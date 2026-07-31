@@ -36,13 +36,13 @@ async function react(sock, mek, emoji) {
 // 📦 Stylish info box
 function xBox(data) {
     return `
-‎*╔ஜ۩▒█ *ᴀʀꜱʟᴀɴ X ᴍᴅ* █▒۩ஜ╗*
-*|* *_ᴀʀꜱʟᴀɴ-ᴍᴅ xᴠɪᴅᴇᴏs_* 
+‎*╔ஜ۩▒█ *katana X ᴍᴅ* █▒۩ஜ╗*
+*|* *_katana-ᴍᴅ xᴠɪᴅᴇᴏs_* 
 *|┉┉┉┉◉◉◉┉┉┉┉┉┉┉━•⟢*
 *|▸ 📌 ᴛɪᴛʟᴇ:* ${data.title}
 *|▸ ⏱ ᴅᴜʀᴀᴛɪᴏɴ:* ${data.duration || "N/A"}
 *|▸ 👁️ ᴠɪᴇᴡs:* ${data.views || "N/A"}
-*|▸ 🥵 ᴏɴʟʏ:* 🔞.... 
+*|▸ 🥵 ᴏɴʟʏ:* ❤️.... 
 *╰━━━━━━━━━━━━━━━━━━⊷*`;
 }
 
@@ -72,7 +72,7 @@ cmd({
     alias: ["xxx", "porn", "sex", "sexyvideos", "pornhub", "xvideos", "sexy"],
     desc: "Search or download Xvideos",
     category: "adult",
-    react: "🔞",
+    react: "🤫",
     filename: __filename
 }, async (sock, mek, m, { reply }) => {
 
@@ -116,8 +116,8 @@ cmd({
             mimetype: "video/mp4",
             fileName: `${videoData.title}.mp4`,
             caption: `
-‎*╔ஜ۩▒█ *ᴀʀꜱʟᴀɴ X ᴍᴅ* █▒۩ஜ╗*
-‎*| 𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 *ᴀʀꜱʟᴀɴ-ᴍᴅ* 
+‎*╔ஜ۩▒█ *katana X ᴍᴅ* █▒۩ஜ╗*
+‎*| 𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 *katana-ᴍᴅ* 
 ‎*╰━━━━━━━━━━━━━━━━━━⊷*`
         }, { quoted: fakevCard });
 
