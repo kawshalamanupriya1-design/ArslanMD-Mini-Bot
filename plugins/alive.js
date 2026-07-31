@@ -2,8 +2,8 @@ const { cmd } = require("../arslan");
 const moment = require("moment");
 const { fakevCard } = require('../lib/fakevCard');
 
-let botStartTime = Date.now(); // Recording the start time of the bot
-const ALIVE_IMG = "https://github.com/kawwagaming02/kawshala-md/blob/main/images/KAWSHALA-MD%20(1).jpg?raw=true"; // Make sure this URL is valid
+let botStartTime = Date.now(); 
+const ALIVE_IMG = "https://github.com/kawwagaming02/kawshala-md/blob/main/images/KAWSHALA-MD%20(1).jpg?raw=true"; 
 
 cmd({
     pattern: "alive",
@@ -13,7 +13,7 @@ cmd({
     filename: __filename
 }, async (conn, mek, m, { reply, from }) => {
     try {
-        const pushname = m.pushName || "User"; // Username or default value
+        const pushname = m.pushName || "User"; 
         const currentTime = moment().format("HH:mm:ss");
         const currentDate = moment().format("dddd, MMMM Do YYYY");
 
@@ -23,7 +23,7 @@ cmd({
         const runtimeHours = Math.floor(runtimeMilliseconds / (1000 * 60 * 60));
 
         const formattedInfo = `
-╭┄┄┄┄[ *katana-ᴍᴅ sᴛᴀᴛᴜs* ]┄┄┄┄
+╭┄┄┄┄[ *katana-ᴍᴅ sᴛᴀᴛᴜs* ]┄┄
 ┊
 ┊     Hi 🫵🏽 ${pushname}
 ┊
@@ -37,31 +37,18 @@ cmd({
 🎉 *Enjoy the Service!*
         `.trim();
 
-        // Check if the image is defined
         if (!ALIVE_IMG || !ALIVE_IMG.startsWith("http")) {
             throw new Error("Invalid ALIVE_IMG URL. Please set a valid image URL.");
         }
 
-        // Send the message with image and caption
+        // contextInfo ayin karala damma
         await conn.sendMessage(from, {
-            image: { url: ALIVE_IMG }, // Check that the URL is valid
+            image: { url: ALIVE_IMG },
             caption: formattedInfo,
-            contextInfo: { 
-                mentionedJid: [m.sender],
-                forwardingScore: 999,
-                isForwarded: true,
-                forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363348739987203@newsletter',
-                    newsletterName: 'ᴀʀꜱʟᴀɴ-ᴍᴅ',
-                    serverMessageId: 143
-                }
-            }
         }, { quoted: fakevCard });
 
     } catch (error) {
         console.error("Error in alive command: ", error);
-        
-        // Respond with error details 
         const errorMessage = `
 ❌ An error occurred while processing the alive command.
 🛠 *Error Details*:
