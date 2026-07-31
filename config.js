@@ -54,7 +54,7 @@ module.exports = {
     /** 
      * @description Display name of the bot
      * @type {string}
-     * @default "KATANA MD Mini"
+     * @default "KATANA-MD Mini"
      */
     BOT_NAME: "KATANA MD Mini",
     
