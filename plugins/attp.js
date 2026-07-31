@@ -2,7 +2,7 @@ const { cmd } = require('../arslan')
 const { fetchGif, gifToSticker } = require('../lib/sticker-utils')
 
 cmd({
-    pattern: "attp",
+    pattern: "sticker1",
     alias: ["attptext", "textsticker", "namesticker", "stickername", "at", "att", "atp"],
     react: "✨",
     desc: "Convert text into animated sticker",
