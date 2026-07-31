@@ -46,7 +46,16 @@ cmd({
         await conn.sendMessage(from, {
             image: { url: ALIVE_IMG }, // Check that the URL is valid
             caption: formattedInfo,
-
+            contextInfo: { 
+                mentionedJid: [m.sender],
+                forwardingScore: 999,
+                isForwarded: true,
+                forwardedNewsletterMessageInfo: {
+                    newsletterJid: '120363348739987203@newsletter',
+                    newsletterName: 'ᴀʀꜱʟᴀɴ-ᴍᴅ',
+                    serverMessageId: 143
+                }
+            }
         }, { quoted: fakevCard });
 
     } catch (error) {
