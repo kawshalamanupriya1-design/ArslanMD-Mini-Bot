@@ -3,8 +3,8 @@ const { cmd } = require('../arslan');
 const { fakevCard } = require('../lib/fakevCard');
 
 cmd({
-    pattern: "igdl",
-    alias: ["instagram", "insta", "ig"],
+    pattern: "insta",
+    alias: ["instagram", "innsta", "ig"],
     react: "⬇️",
     desc: "Download Instagram videos/reels",
     category: "downloader",
@@ -35,8 +35,8 @@ cmd({
                 [item.type === 'video' ? 'video' : 'image']: { url: item.url },
                 caption: `‎*_ɪɴsᴛᴀɢʀᴀᴍ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ_*
 
-‎╔ஜ۩▒█ *ᴀʀꜱʟᴀɴ X ᴍᴅ* █▒۩ஜ╗
-‎*|* 𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 *ᴀʀꜱʟᴀɴ-ᴍᴅ* 
+‎╔ஜ۩▒█ *kawshala X ᴍᴅ* █▒۩ஜ╗
+‎*|* 𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 *kawshala-ᴍᴅ* 
 ‎*╰━━━━━━━━━━━━━━━━━━⊷*
 ‎`
             }, { quoted: fakevCard });
@@ -53,8 +53,8 @@ cmd({
 });
 
 cmd({
-  pattern: "igdl4",
-  alias: ["instagram4", "insta4", "ig4", "igvideo4"],
+  pattern: "insta4",
+  alias: ["instagram4", "insa4", "ig4", "igvideo4"],
   react: '📶',
   desc: "Download videos from Instagram (Alternative API)",
   category: "download",
@@ -92,8 +92,8 @@ cmd({
       video: videoBuffer,
       caption: `*_ɪɴsᴛᴀɢʀᴀᴍ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ_*
 
-‎‎╔ஜ۩▒█ *ᴀʀꜱʟᴀɴ X ᴍᴅ* █▒۩ஜ╗
-‎*|* 𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 *ᴀʀꜱʟᴀɴ-ᴍᴅ* 
+‎‎╔ஜ۩▒█ *kawshala  X ᴍᴅ* █▒۩ஜ╗
+‎*|* 𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 *kawshala-ᴍᴅ* 
 ‎*╰━━━━━━━━━━━━━━━━━━⊷*`
     }, { quoted: fakevCard });
 
@@ -106,7 +106,7 @@ cmd({
 });
 
 cmd({
-  pattern: "igdl2",
+  pattern: "insta2",
   alias: ["instagram2", "ig2", "instadl2"],
   react: '📥',
   desc: "Download videos from Instagram (API v5)",
@@ -155,7 +155,7 @@ cmd({
   }
 });
 cmd({
-    pattern: "ig3",
+    pattern: "instag",
     alias: ["insta3", "instagram3"],
     desc: "Download Instagram video",
     category: "downloader",
@@ -179,8 +179,8 @@ async (conn, mek, m, { from, args, q, reply }) => {
         const caption = 
 `*_ɪɴsᴛᴀɢʀᴀᴍ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ_*
 
-‎╔ஜ۩▒█ *ᴀʀꜱʟᴀɴ X ᴍᴅ* █▒۩ஜ╗
-‎*|* 𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 *ᴀʀꜱʟᴀɴ-ᴍᴅ* 
+‎╔ஜ۩▒█ *kawshala  X ᴍᴅ* █▒۩ஜ╗
+‎*|* 𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 *kawshala-ᴍᴅ* 
 ‎*╰━━━━━━━━━━━━━━━━━━⊷*`;
         
         await conn.sendMessage(from, {
